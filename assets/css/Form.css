@@ -1,0 +1,367 @@
+/*-----------------
+    GLOBAL STYLE 
+-------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:not(i) {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+.homeBtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #fff;
+    color: #FF7716;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.homeBtn i{
+    font-size: 16px;
+}
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Bx {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.Bx img {
+    width: 100%;
+}
+.circle-shape {
+    position: absolute;
+    top: 135px;
+    right: 290px;
+    width: 300px;
+    height: 300px;
+    background-color: #FF7716;
+    border-radius: 850.226px 797.379px 831.666px 804.283px;
+    box-shadow: 0px 1px 10px 0px rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    animation: wave 5s linear infinite;
+}
+
+@keyframes wave {
+    20% {
+        border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+    }
+
+    40% {
+        border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+    }
+
+    60% {
+        border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+    }
+
+    80% {
+        border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+    }
+}
+
+/*------------------- 
+    Forms 
+--------------------*/
+
+.formBox {
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(240, 237, 237); */
+    color: #FF7716;
+    padding: 2rem 3rem;
+    /* box-shadow: 0px 6px 20px 0px rgba(51, 51, 51, 0.17); */
+    border-radius: 6px;
+    transition: 0.5s;
+    border: 2px solid rgb(226, 224, 224);
+    margin-top: 17px;
+
+}
+
+.form_title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+}
+
+.social-media_icon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.7rem;
+
+}
+
+.facebook {
+    background-color: #475993;
+    padding: 10px 10px;
+    border-radius: 3px;
+    width: 100%;
+    text-align: center;
+    margin-right: 15px;
+
+}
+
+.google {
+    background-color: rgb(245, 239, 239);
+    padding: 10px 19px;
+    border-radius: 3px;
+    width: 100%;
+    text-align: center;
+    margin-left: 15px;
+
+
+}
+
+.facebook img,
+.google img {
+    width: 30px;
+    margin: 0px 10px;
+}
+
+.facebook a,
+.google a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+
+.google img {
+    width: 25px;
+}
+
+.google a {
+    color: #000;
+}
+
+.form {
+    width: 360px;
+}
+
+.form_div {
+    position: relative;
+    height: 48px;
+    margin-bottom: 2.5rem;
+}
+
+.form_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    border: 1px solid #c7c7c7;
+    border-radius: 3px;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+}
+
+.form_label {
+    position: absolute;
+    left: 1rem;
+    top: .60rem;
+    padding: 0 .25rem;
+    color: gray;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    transition: .3s;
+}
+
+.form_input:focus+.form_label {
+    top: -23px;
+    left: 3px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.form_input:not(:placeholder-shown).form_input:not(:focus)+.form_label {
+    top: -23px;
+    left: 3px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 10;
+
+}
+
+.form_input:focus {
+    border: 1.5px solid #FF7716;
+}
+
+.forgotPass {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF7716;
+    letter-spacing: 0.4px;
+    margin-bottom: 1.5rem;
+}
+
+.forgotPass:hover {
+    color: #000;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #FF7716;
+    color: #fff;
+    border-radius: 3px;
+    letter-spacing: 0.4px;
+    transition: all 0.4s ease;
+}
+
+.submitBtn:hover {
+    background: #eb680a;
+}
+
+/* Password Hidden & Show */
+.form_div {
+    position: relative;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    color: gray;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+/* Contact textarea */
+.form_div textarea {
+    resize: none;
+    border: 1.5px solid #c7c7c7;
+    outline: none;
+    background: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 25px;
+    border-radius: 10px;
+    width: 100%;
+    height: 130px;
+}
+
+.fa-telegram-plane {
+    font-size: 16px;
+    padding: 0px 4px;
+}
+
+/* Error Msg */
+.error,
+.success {
+    width: 100%;
+    position: relative;
+    background-color: #F8D7DA;
+    color: #9D1C24;
+    padding: 15px 20px;
+   
+    margin-bottom: 1.5rem;
+    border-radius: 3px;
+}
+.error div,
+.success div {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+.error strong,
+.success strong {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.error .fa-times-circle,
+.success .fa-times-circle {
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    cursor: pointer;
+    padding-left: 10px;
+    color: #9D1C24;
+    font-size: 15px;
+}
+.error a {
+    color: #9D1C24;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+
+}
+
+.success {
+    background: #D4EDDA;
+    color: #525759;
+}
+
+.success .fa-times-circle {
+    color: #525759;
+}
+p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #000;
+}
+
+p a {
+     font-size: 16px;
+     font-weight: 600;
+    color: #FF7716;
+    letter-spacing: 0.3px;
+}
+
+
+/*---------- 
+    END 
+-----------*/
